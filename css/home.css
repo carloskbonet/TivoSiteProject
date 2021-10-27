@@ -1,0 +1,156 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+.top-bar {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 0.875rem;
+    margin-top: -10px;
+    background-color: #5f4dee;
+    padding: 25px 25px;
+    margin-left: -20px;
+    width: 100%;
+}
+
+.top-bar img {
+    margin-left: 20px;
+}
+
+.top-buttons {
+    float: right;
+    margin-top: 10px;
+    margin-right: 62px;
+    color: #dadfe2;
+}
+
+.top-buttons a {
+    color: #dadfe2;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.list-buttons {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-button {
+    background-color: #5f4dee;
+    padding: 7px;
+    border: none;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #5f4dee;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop-content a {
+    color: #dadfe2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-content a:hover {
+    color: white;
+}
+
+.list-buttons:hover .drop-content {
+    display: block;
+}
+
+.list-buttons:hover .drop-button {
+}
+
+.login-button {
+    margin-left: 21px;
+    border-radius: 30px;
+    border-color: white;
+    color: #dadfe2;
+    width: 90px;
+    height: 30px;
+    background-color: #5f4dee;
+    font-weight: 600;
+}
+
+.login-button:hover {
+    background-color: white;
+}
+
+.background-bar {
+    background-color: #5f4dee;
+    margin-left: -25px;
+    margin-right: -25px;
+    height: 630px;
+}
+
+.header-image {
+    float: right;
+    transform: rotate(2deg);
+    width: 680px;
+    margin-top: 140px;
+    margin-right: -80px;
+}
+
+.background-text-header {
+    float: right;
+    margin-top: 200px;
+    margin-right: 160px;
+}
+
+.background-text-header .header-text-title {
+    color: white;
+    font-size: 3.5rem;
+    line-height: 4.375rem;
+    margin: 0px 0px 16px;
+    font-weight: 700;
+}
+
+.background-text-header .header-text {
+    color: white;
+    font-size: 18px;
+    margin: 0px 0px 38px;
+    font-weight: 500;
+    word-spacing: 1px;
+    letter-spacing: 0.3px;
+}
+
+.background-buttons-header {
+    float: right;
+    margin-top: 35px;
+    margin-right: 241px;
+}
+
+.background-buttons-header button {
+    border-radius: 50px;
+    border-color: white;
+    width: 100px;
+    height: 40px;
+}
+
+.background-buttons-header .discover-button {
+    color: #5f4dee;
+    background-color: white;
+}
+
+.background-buttons-header .discover-button:hover {
+    color: white;
+    background-color: #5f4dee;
+}
+
+.background-buttons-header .signup-button {
+    color: white;
+    background-color: #5f4dee;
+}
+
+.background-buttons-header .signup-button:hover {
+    color: #5f4dee;
+    background-color: white;
+}
