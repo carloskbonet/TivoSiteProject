@@ -102,7 +102,7 @@ body {
 .background-text-header {
     float: right;
     margin-top: 200px;
-    margin-right: 160px;
+    margin-right: 11%;
 }
 
 .background-text-header .header-text-title {
@@ -123,16 +123,16 @@ body {
 }
 
 .background-buttons-header {
-    float: right;
     margin-top: 35px;
-    margin-right: 241px;
 }
 
 .background-buttons-header button {
     border-radius: 50px;
     border-color: white;
-    width: 100px;
-    height: 40px;
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .background-buttons-header .discover-button {
@@ -148,9 +148,70 @@ body {
 .background-buttons-header .signup-button {
     color: white;
     background-color: #5f4dee;
+    margin-left: 10px;
 }
 
 .background-buttons-header .signup-button:hover {
     color: #5f4dee;
     background-color: white;
+}
+
+.second-header-text {
+    margin-top: 100px;
+    margin-left: 0%;
+}
+
+.second-header-text .description-text {
+    font-size: 14px;
+    color: #5f4dee;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.second-header-text .header-title {
+    margin-top: -19px;
+    text-align: center;
+    color: #2F363B;
+    font-size: 34px;
+}
+
+.announce-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.announce-container .list {
+    list-style: none;
+}
+
+.announce-container img {
+    width: 16%;
+}
+
+.announce-container .img1 {
+    margin-right: 200px;
+}
+
+.announce-container .img3 {
+    margin-left: 30%;
+}
+
+.announce-container .list-subtitle {
+    list-style: none;
+    margin-top: 60px;
+}
+
+.announce-container .list-subtitle label {
+    font-size: 20px;
+    font-style: "Open Sans", sans-serif;
+    color: #2F363B;
+    font-weight: 600;
+}
+
+.announce-container .label1 {
+    margin-right: 200px;
+}
+
+.announce-container .label3 {
+    margin-left: 200px;
 }
