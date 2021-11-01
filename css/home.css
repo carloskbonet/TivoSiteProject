@@ -18,6 +18,10 @@
         z-index: 1;
     }
 
+    .menuToggle {
+        display: none;
+    }
+
     .top-bar-buttons-mobile {
         display: none;
     }

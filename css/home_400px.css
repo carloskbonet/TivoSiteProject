@@ -19,14 +19,17 @@
     }
 
     .menuToggle {
-        float: right;
+        position: fixed;
+        z-index: 1;
     }
 
-    .menuToggle .nav_checkbox {
+    .menuToggle .checkbox-icon .nav_checkbox {
+        float: right;
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         width: 30px;
         height: 30px;
-        margin: 0px 30px;
+        margin-top: 10px;
+        margin-right: 70px;
         cursor: pointer;
     }
 
@@ -34,108 +37,96 @@
         display: none;
     }
 
-    .menuToggle #menu-background {
-        display: none;
-        margin-top: 70px;
-        background-color: #5f4dee;
-        height: 1000px;
-        width: 110%;
-        margin-left: -5%;
-        margin-right: 200px;
-        transition: all 5s;
+    .menuToggle .menu-transform {
+        display: block;
+        transform: translateX(100%);
+        transition: all .5s;
     }
 
-    .mobile-list-buttons #menu-background .menu-mobile-content {
+    .menuToggle .menu-transform #menu-background {
+        margin-top: 60px;
+        background-color: #5f4dee;
+        height: 1000px;
+        width: 400px;
+        margin-left: -5%;
+    }
+
+    .menu-transform #menu-background .menu-mobile-content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .menuToggle #menu-background .menu-mobile-content li {
+    .menu-transform #menu-background .menu-mobile-content li {
         list-style: none;
         margin-left: -10px;
         margin-bottom: 20px;
     }
 
-    .menuToggle #menu-background .menu-mobile-content a:hover {
+    .menu-transform #menu-background .menu-mobile-content a:hover {
         color: white;
     }
 
-    .menuToggle #menu-background .menu-mobile-content a {
+    .menu-transform #menu-background .menu-mobile-content a {
         text-decoration: none;
         color: #dadfe2;
     }
 
-    #nav_checkbox:checked ~ #menu-background{
-        display: block;
-    }
-
-    .top-bar img {
-        margin-left: 0px;
+    #nav_checkbox:checked ~ .menu-transform{
+        transform: translateX(0%);
     }
 
     .top-buttons {
         display: none;
-        float: right;
-        margin-top: 10px;
-        margin-right: 62px;
-        color: #dadfe2;
     }
-    
-    .top-buttons a {
-        color: #dadfe2;
-        text-decoration: none;
-        padding: 7px;
-    }
-    
+
     .list-buttons {
         position: relative;
-        display: inline-block;
+        display: none;
     }
     
     .drop-button {
         background-color: #5f4dee;
-        padding: 7px;
+        margin-left: -12px;
+        font-size: 16px;
+        color: #dadfe2;
         border: none;
     }
-    
-    .drop-content {
-        display: none;
-        position: absolute;
-        background-color: #5f4dee;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
+
+    .drop-button:hover {
+        color: white;
     }
     
-    .drop-content a {
+    .list-buttons a {
         color: #dadfe2;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
     }
     
-    .drop-content a:hover {
+    .list-buttons a:hover {
         color: white;
     }
     
-    .list-buttons:hover .drop-content {
+    .drop-button:hover ~ .list-buttons {
         display: block;
     }
     
     .login-button {
-        margin-left: 21px;
+        margin-top: 14px;
+        margin-left: -10px;
         border-radius: 30px;
         border-color: white;
         color: #dadfe2;
-        width: 90px;
-        height: 30px;
+        width: 100px;
+        height: 36px;
         background-color: #5f4dee;
         font-weight: 600;
     }
     
     .login-button:hover {
         background-color: white;
+        color: #5f4dee;
     }
     
     .background-bar {

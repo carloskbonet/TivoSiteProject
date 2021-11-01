@@ -12,7 +12,7 @@
 </head>
 
 <body class="content">
-    <nav class="top-bar">
+    <div class="top-bar">
         <a href="#"><img src="../Images/logo.png"></a>
         <div class="top-buttons">
             <a href="#">Home</a>
@@ -31,22 +31,34 @@
             </div>
             <button class="login-button" type="submit">Log In</button>
         </div>
+    </div>
 
-        <div class="menuToggle">
-            <input id="nav_checkbox" class="nav_checkbox" type="checkbox" />
+    <div class="menuToggle">
+        <div class="checkbox-icon">
             <label for="nav_checkbox" class="nav_checkbox"></label>
-
+        </div>
+        <input id="nav_checkbox" class="nav_checkbox" type="checkbox" />
+        <div class="menu-transform">
             <nav id="menu-background">
                 <ul class="menu-mobile-content">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Details</a></li>
                     <li><a href="#">Pricing</a></li>
+                    <button class="drop-button">Drop</button>
+                    <div class="list-buttons">
+                        <a href="#">Sign Up</a>
+                        <a href="#">Log In</a>
+                        <a href="#">Article Details</a>
+                        <a href="#">Terms Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <button class="login-button" type="submit">Log In</button>
                 </ul>
             </nav>
         </div>
+    </div>
 
-    </nav>
     <div class="background-bar">
         <br><br><br>
         <div class="initial-bar">
