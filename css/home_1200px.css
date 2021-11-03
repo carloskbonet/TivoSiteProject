@@ -290,4 +290,8 @@
         font-family: "Open Sans", sans-serif;
         text-decoration: none;
     }
+
+    .modal-topbar input {
+        width: 30%;
+    }
 }

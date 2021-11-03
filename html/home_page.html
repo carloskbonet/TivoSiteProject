@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
-<body class="content">
+<body id="body" class="content">
     <div class="top-bar">
         <a href="#"><img src="../Images/logo.png"></a>
         <div class="top-buttons">
@@ -151,6 +151,49 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.0579839376613!2d-51.470635070834916!3d-25.3970457874906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef362dab952f4b%3A0x8b4685920af90ff9!2sR.%20XV%20de%20Novembro%2C%208065%20-%20Centro%2C%20Guarapuava%20-%20PR%2C%2085010-000!5e0!3m2!1spt-BR!2sbr!4v1630496349490!5m2!1spt-BR!2sbr"
             allowfullscreen="" loading="lazy"></iframe>
     </section>
+
+
+    <button class="button-modal" onclick="document.getElementById('modal').style.display='block'">
+        Modal Message
+    </button>
+
+    <div id="modal" class="modal">
+        <button class="button-modal-close" onclick="document.getElementById('modal').style.display='none'">
+            X
+        </button>
+        <div class="modal-topbar">
+            <label>Name :<br>
+                <input type="text">
+            </label><br />
+            <label>Email :<br>
+                <input type="text">
+            </label><br />
+            <label>Subject :<br>
+                <input type="text">
+            </label><br />
+            <div class="modal-message">
+                <label>Message :<br>
+                    <textarea columns="10" rows="30" class="message-text" type="text"></textarea>
+                </label><br />
+            </div>
+            <form method="get" action="." class="modal-cep">
+                <label>CEP :<br>
+                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                           onblur="pesquisacep(this.value);" /></label><br />
+                    <label>Street :<br>
+                    <input name="rua" type="text" id="rua" size="60" /></label><br />
+                    <label>District :<br>
+                    <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+                    <label>City :<br>
+                    <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+                    <label>State :<br>
+                    <input name="uf" type="text" id="uf" size="2" /></label><br />
+                    <label class="ibge">IBGE:<br>
+                    <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+            </form>
+        </div>
+    </div>
+
     <footer>
         <br><br><br><br>
         <div class="card-footer">
@@ -184,4 +227,5 @@
         </div>
         <br><br>
     </footer>
+    <script src="../JS/cep.js"></script>
 </body>

@@ -20,7 +20,8 @@
 
     .menuToggle {
         position: fixed;
-        z-index: 1;
+        width: 100%;
+        z-index: -1;
     }
 
     .menuToggle .checkbox-icon .nav_checkbox {
@@ -29,8 +30,9 @@
         width: 30px;
         height: 30px;
         margin-top: 10px;
-        margin-right: 70px;
+        margin-right: 30px;
         cursor: pointer;
+        z-index: 1;
     }
 
     .menuToggle input[type="checkbox"] {
@@ -41,6 +43,7 @@
         display: block;
         transform: translateX(100%);
         transition: all .5s;
+        z-index: 1;
     }
 
     .menuToggle .menu-transform #menu-background {
@@ -70,6 +73,10 @@
     .menu-transform #menu-background .menu-mobile-content a {
         text-decoration: none;
         color: #dadfe2;
+    }
+
+    #nav_checkbox:checked ~ .menuToggle {
+        display: block;
     }
 
     #nav_checkbox:checked ~ .menu-transform{
@@ -326,5 +333,9 @@
         color: #e2e1e8;
         font-family: "Open Sans", sans-serif;
         text-decoration: none;
+    }
+
+    .modal-topbar input {
+        width: 80%;
     }
 }
