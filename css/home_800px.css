@@ -23,39 +23,36 @@
         margin-left: 25px;
     }
     
-    .menuToggle {
-        position: fixed;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .menuToggle .checkbox-icon .nav_checkbox {
+    .checkbox-icon .nav_checkbox {
         float: right;
+        right: 25px;
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         width: 30px;
         height: 30px;
         margin-top: 10px;
-        margin-right: 50px;
         cursor: pointer;
+        position: fixed;
+        z-index: 2;
     }
 
-    .menuToggle input[type="checkbox"] {
+    input[type="checkbox"] {
         display: none;
     }
 
-    .menuToggle .menu-transform {
+    .menu-transform {
         display: block;
-        width: 100%;
+        position: fixed;
         transform: translateX(100%);
         transition: all .5s;
+        z-index: 1;
     }
 
-    .menuToggle .menu-transform #menu-background {
-        margin-top: 80px;
+    .menu-transform #menu-background {
+        margin-top: 60px;
         background-color: #5f4dee;
         height: 1000px;
-        width: 991px;
-        margin-left: -3%;
+        width: 994px;
+        margin-left: -1%;
     }
 
     .menu-transform #menu-background .menu-mobile-content {
@@ -339,5 +336,64 @@
 
     .modal-topbar input {
         width: 60%;
+    }
+
+    .carousel2-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    
+    .carousel2-container .slide-content {
+        display: none;
+    }
+
+    #slide-content {
+        display: grid;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    
+    #slide-content .image-slide {
+        width: 65px;
+        border-radius: 120px;
+        margin-left: 44%;
+        margin-bottom: 15px;
+    }
+    
+    #slide-content #slide-text {
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        color: #6b747b;
+        font-style: italic;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        height: 100px;
+        margin-top: -22px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+    
+    .prev {
+        left: 0;
+        margin-left: 10%;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .next {
+        right: 0;
+        margin-right: 10%;
+        border-radius: 3px 0 0 3px;
     }
 }

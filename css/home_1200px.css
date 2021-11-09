@@ -18,7 +18,15 @@
         z-index: 1;
     }
 
-    .menuToggle {
+    .checkbox-icon {
+        display: none;
+    }
+
+    .nav_checkbox {
+        display: none;
+    }
+
+    .menu-transform {
         display: none;
     }
     
@@ -293,5 +301,70 @@
 
     .modal-topbar input {
         width: 30%;
+    }
+
+    .carousel2-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    
+    .carousel2-container .slide-content {
+        display: none;
+    }
+    
+    #slide-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        margin-left: 90px;
+    }
+    
+    #slide-content .image-slide {
+        width: 160px;
+        border-radius: 120px;
+        
+    }
+    
+    #slide-content #slide-text {
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        color: #6b747b;
+        margin-top: 55px;
+        margin-left: -270px;
+        margin-right: 140px;
+        font-style: italic;
+    }
+    
+    .carousel2-container .slide-content #slide-text {
+        text-align: left;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        height: 100px;
+        margin-top: -22px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+    
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+        margin-left: 4%;
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        margin-right: 4%;
     }
 }
