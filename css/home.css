@@ -300,6 +300,10 @@
         width: 20%;
     }
 
+    .message-text {
+        width: 20%;
+    }
+
     .carousel2-container {
         max-width: 1000px;
         position: relative;
@@ -377,7 +381,8 @@
     border-radius: 40px;
     background-color: #5f4dee;
     color: #dadfe2;
-    
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .button-modal:hover {
@@ -401,6 +406,7 @@
 
 .modal {
     display: none;
+    place-items: center;
     position: fixed;
     top: 0;
     right: 0;
@@ -415,8 +421,16 @@
     overflow: auto;
 }
 
+.modal-field {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.modal-topbar {
+    text-align: center;
+}
+
 .message-text {
-    width: 87%;
     height: 60px;
     line-break: auto;
 }

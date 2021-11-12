@@ -303,6 +303,10 @@
         width: 30%;
     }
 
+    .message-text {
+        width: 30%;
+    }
+
     .carousel2-container {
         max-width: 1000px;
         position: relative;

@@ -2,12 +2,13 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Tivo</title>
     <link rel="icon" href="../Images/favicon.png">
     <link href="../css/home.css" rel="stylesheet">
-    <link href="../css/home_400px.css" rel="stylesheet">
-    <link href="../css/home_800px.css" rel="stylesheet">
     <link href="../css/home_1200px.css" rel="stylesheet">
+    <link href="../css/home_800px.css" rel="stylesheet">
+    <link href="../css/home_400px.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 
@@ -197,13 +198,12 @@
     </div>
 
     <section>
-        <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.0579839376613!2d-51.470635070834916!3d-25.3970457874906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef362dab952f4b%3A0x8b4685920af90ff9!2sR.%20XV%20de%20Novembro%2C%208065%20-%20Centro%2C%20Guarapuava%20-%20PR%2C%2085010-000!5e0!3m2!1spt-BR!2sbr!4v1630496349490!5m2!1spt-BR!2sbr"
-            allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.2289373234285!2d-51.472416585373274!3d-25.397146183803578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef363396d1871d%3A0xf28055fcdf05407b!2sEntre%20Rios%20Assessoria%20Cont%C3%A1bil!5e0!3m2!1spt-BR!2sbr!4v1636723021715!5m2!1spt-BR!2sbr"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
 
-    <button class="button-modal" onclick="document.getElementById('modal').style.display='block'">
+    <button class="button-modal" onclick="document.getElementById('modal').style.display='grid'">
         Modal Message
     </button>
 
@@ -212,31 +212,31 @@
             X
         </button>
         <div class="modal-topbar">
-            <label>Name :<br>
+            <label class="modal-field">Name :<br>
                 <input type="text">
             </label><br />
-            <label>Email :<br>
+            <label class="modal-field">Email :<br>
                 <input type="text">
             </label><br />
-            <label>Subject :<br>
+            <label class="modal-field">Subject :<br>
                 <input type="text">
             </label><br />
             <div class="modal-message">
-                <label>Message :<br>
+                <label class="modal-field">Message :<br>
                     <textarea columns="10" rows="30" class="message-text" type="text"></textarea>
                 </label><br />
             </div>
             <form method="get" action="." class="modal-cep">
-                <label>CEP :<br>
+                <label class="modal-field">CEP :<br>
                     <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
                         onblur="pesquisacep(this.value);" /></label><br />
-                <label>Street :<br>
+                <label class="modal-field">Street :<br>
                     <input name="rua" type="text" id="rua" size="60" /></label><br />
-                <label>District :<br>
+                <label class="modal-field">District :<br>
                     <input name="bairro" type="text" id="bairro" size="40" /></label><br />
-                <label>City :<br>
+                <label class="modal-field">City :<br>
                     <input name="cidade" type="text" id="cidade" size="40" /></label><br />
-                <label>State :<br>
+                <label class="modal-field">State :<br>
                     <input name="uf" type="text" id="uf" size="2" /></label><br />
                 <label class="ibge">IBGE:<br>
                     <input name="ibge" type="text" id="ibge" size="8" /></label><br />

@@ -335,7 +335,11 @@
     }
 
     .modal-topbar input {
-        width: 60%;
+        width: 50%;
+    }
+
+    .message-text {
+        width: 50%;
     }
 
     .carousel2-container {
